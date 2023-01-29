@@ -41,7 +41,13 @@ body {
 }
 
 .icon-container {
-    margin-bottom: 15px
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.redirect-button:hover{
+    cursor: pointer;
+    background-color: #af2d3c;
 }
 
 a {
