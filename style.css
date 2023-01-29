@@ -17,7 +17,7 @@ body {
     height: 150px;
     border-radius: 100%;
     margin-top: 10%;
-    border: 2px dashed #FCF6F6;
+    border: 3px solid #FCF6F6;
 }
 
 .portrait-img {
