@@ -47,3 +47,14 @@ body {
 a {
     color: #FCF6F6;
 }
+
+.personal-info-section {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(87, 87, 87);
+}
+
+.info-container {
+    color: rgb(255, 255, 255);
+    padding: 25px 25px 0px 25px;
+}
