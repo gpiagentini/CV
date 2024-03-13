@@ -2,81 +2,171 @@
 <html>
 
 <head>
-    <title> Gabriel's Resume </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <title>Gabriel Martins Teixeira Piagentini</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 
-<body class="d-flex justify-content-start">
-    <div class="profile-bar d-flex justify-content-start align-items-center flex-column">
-        <div class="portrait">
-            <img src="assets/img/profile-picture.webp" class="img-fluid portrait-img" alt="Profile Picture">
-        </div>
-        <div class="divider-bar"></div>
-        <div class="container personal-info-container">
-            <h4>Gabriel Martins Teixeira Piagentini</h4>
+<body id="body" class="d-flex flex-column align-items-center">
+
+    <main class="d-flex p-2 flex-column bd-highlight justify-content-center align-items-center main-container">
+        <nav class="navbar sticky-top navbar-expand-lg justify-content-center align-items-center">
+            <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="about-me" class="nav-link" href="#">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tecnical habilites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="about-me" class="d-flex justify-content-center align-items-center flex-column section">
+            <h2 class="heading"> About me </h2>
+            <div class="d-flex justify-content-center align-items-center section-content">
+                <!-- <div class="profile-picture-container">
+                    <img src="assets/img/profile-picture.png" class="profile-picture">
+                </div> -->
+                <div class="profile-sumary-container">
+                    <p> Formado em engenharia de computação pela FIAP, atuo como
+                        desenvolvedor FullStack há 5 anos com foco em aplicações Backend e experiência no
+                        desenvolvimento de software voltado ao mercado financeiro.
+                        Participei da sustentação e aprimoramento de micro-serviços internos, voltados a agilizar e
+                        automatizar processos relacionados ao operacional e pós trade, de mesas de operações e
+                        backoffice. Também participei ativamente de projetos voltados a integrações com clientes , por
+                        meio de API's, WebServices SOAP, e sessões de comunicação utilizando do protocolo FIX.
+                        Durante minha carreira, também cheguei a ser o responsável por gerenciar uma pequena equipe que
+                        garantia a sustentabilidade de sistemas críticos voltados ao operacional.</p>
+                </div>
+            </div>
+        </section>
+        <section id="experiences" class="d-flex flex-column align-items-center justify-content-center section">
+            <h2 class="heading"> Experiences</h2>
             <br />
-            <div class="container d-flex align-items-center icon-container">
-                <img src="assets/img/email_icon.svg" class="icon" width="24" height="24">
-                <div class="divider"></div>
-                <span> gmtpiagentini@gmail.com </span>
-            </div>
-            <div class="container d-flex align-items-center icon-container">
-                <img src="assets/img/phone_icon.svg" class="icon" width="24" height="24">
-                <div class="divider"></div>
-                <span> +55 (11) 99511-7433 </span>
-            </div>
-        </div>
-        <div class="divider-bar"></div>
-        <div class="container personal-info-container">
-            <h5>Full Stack Developer</h5>
-        </div>
-        <div class="divider-bar"></div>
-        <div class="container d-flex flex-column align-items-start personal-info-container">
-            <div class="container d-flex align-items-center icon-container redirect-button"
-                onclick="openNewTab('https\:\/\/github.com/gpiagentini')">
-                <img src="assets/img/github_icon.svg" class="icon" width="48" height="48">
-                <div class="divider"></div>
-                <span> Github </span>
-            </div>
-            <div class="container d-flex align-items-center icon-container redirect-button"
-                onclick="openNewTab('https\:\/\/br.linkedin.com/in/gpiagentini')">
-                <img src="assets/img/linkedin_icon.svg" class="icon" width="48" height="48">
-                <div class="divider"></div>
-                <span> Linkedin </span>
-            </div>
-        </div>
-    </div>
-    <div class="personal-info-section d-flex flex-column">
-        <div class="info-container d-flex flex-column">
-            <h2 class="align-self-center"> Sobre mim </h2>
+            <h2>TIMELINE</h2>
+        </section>
+        <section id="tecnical-habilities" class="d-flex flex-column justify-content-center align-items-center section">
+            <h2 class="heading"> Tecnical Habilities </h2>
             <br />
-            <p>
-                Olá, me chamo Gabriel Martins Teixeira Piagentini e tenho <span id="age"></span> anos. <br>
-                Atualmente trabalho como desenvolvedor Backend utilizando as linguagens .Net, NodeJs (com Typescript),
-                Python e Java. Também estou iniciando meus estudos em DevOps e Observabilidade, principalmente com focos
-                nos serviços AWS, Docker e ferramentas de monitoramento, como OpenTelemetry e o Datadog. <br>
-                Tenho como ambição profissional atualmente aumentar meus conhecimentos, tanto nas ferramentas citadas
-                acima, como me mantendo atualizado das melhores práticas de programação.
-            </p>
-        </div>
-        <div class="divider-bar"></div>
-        <div class="info-container d-flex flex-column">
-            <h2 class="align-self-center"> Carreira Profissional </h2>
+            <div class="d-flex justify-content-center tecnical-habilities-container">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Backend Frameworks</h5>
+                        <br />
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-muted">Spring</li>
+                            <li class="list-group-item text-muted">Jakarta Faces</li>
+                            <li class="list-group-item text-muted">Akka Framework</li>
+                            <li class="list-group-item text-muted">ASP.NET</li>
+                            <li class="list-group-item text-muted">Express</li>
+                            <li class="list-group-item text-muted">Flask</li>
+                            <li class="list-group-item text-muted">Django</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend Frameworks</h5>
+                        <br />
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-muted">Angular 2+</li>
+                            <li class="list-group-item text-muted">Vue.js</li>
+                            <li class="list-group-item text-muted">React</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Integrations</h5>
+                        <br />
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-muted">Kafka</li>
+                            <li class="list-group-item text-muted">RabbitMQ</li>
+                            <li class="list-group-item text-muted">Restfull API's</li>
+                            <li class="list-group-item text-muted">WebServices SOAP</li>
+                            <li class="list-group-item text-muted">FIX Protocol</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Databases</h5>
+                        <br />
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-muted">Mysql</li>
+                            <li class="list-group-item text-muted">Postgres</li>
+                            <li class="list-group-item text-muted">MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Languages" class="d-flex flex-column align-items-center justify-content-center section">
+            <h2 class="heading"> Languages </h2>
             <br />
-            <p>
-                Em Construção
-            </p>
-        </div>
-        <div class="divider-bar"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">English</h5>
+                        <h6 class="card-subtitle text-muted">Advanced</h6>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Spanish</h5>
+                        <h6 class="card-subtitle text-muted">Begginer</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="d-flex flex-column justify-content-center align-items-center section">
+            <h2 class="heading"> Contact </h2>
+            <br />
+            <div class="d-flex justify-content-center contact-container">
+                <div class="d-flex flex-column contact-sub-container">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/img/github_icon.svg" />
+                        <a class="contact-link" href="https://github.com/GabrielPia"> Github </a>
+                    </div>
+                    <br />
+                    <div class="d-flex align-items-center">
+                        <img src="assets/img/linkedin_icon.svg" />
+                        <a class="contact-link" href="https://www.linkedin.com/in/gpiagentini/?locale=en_US"> Linkedin
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column tact-sub-container">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/img/email_icon.svg" />
+                        <a class="contact-link" href="mailto: gmtpiagentini@gmail.com"> gmtpiagentini@gmail.com </a>
+                    </div>
+                    <br />
+                    <div class="d-flex align-items-center">
+                        <img src="assets/img/phone_icon.svg" />
+                        <span class="contact-link"> +55(11)99511-7433 </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div class="matrix-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+
+    <script src="./scripts/background.js"></script>
+    <!-- <script src="./scripts/backgroundAnimation.js"></script> -->
 </body>
 
 </html>
