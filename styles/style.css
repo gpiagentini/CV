@@ -1,16 +1,13 @@
-@font-face {
-    font-family: pixel;
-    src: url(../assets/fonts/dogica.ttf);
-}
-
-@font-face {
-    font-family: cuneiform;
-    src: url(../assets/fonts/cuneiform.ttf);
-}
-
 body {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
     font-family: pixel;
     background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .heading {
@@ -18,11 +15,38 @@ body {
 }
 
 .main-container {
-    width: 60% !important;
+    width: 90% !important;
     height: 100% !important;
     opacity: 0.8;
     background-color: black;
     z-index: 1;
+}
+
+.timeline-container {
+    position: relative;
+    width: 50%;
+}
+
+.timeline {
+    position: absolute;
+    border-left: 5px dashed rgb(0, 70, 0);
+    height: 100%;
+}
+
+.timeline-card {
+    width: 400px;
+    position: relative;
+    left: 250px;
+    border: 1px dashed green;
+    border-radius: 5px;
+}
+
+.timeline-card:nth-child(even) {
+    left: -250px;
+}
+
+.timeline-card {
+    width: 20rem;
 }
 
 .navbar {
@@ -42,21 +66,47 @@ body {
     -webkit-text-stroke-color: green;
 }
 
+.nav-link:hover:hover {
+    transform: scale(1.1);
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
 .section {
-    width: 80%;
+    width: 100%;
     padding: 20px;
+    margin: 0 0 20px 0;
+    border-bottom: 2px dashed rgba(0, 83, 0, 0.377);
+}
+
+.section:last-child {
+    border-bottom: none;
 }
 
 .tecnical-habilities-container {
     width: 100%;
 }
 
+.tecnical-habilities-card {
+    width: 20rem;
+}
+
 .card {
     margin: 10px;
-    background-color: rgba(0,0,0,0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     border: 2px solid green;
     border-radius: 10px;
     color: white;
+}
+
+.about-me-card {
+    border: none !important;
+}
+
+.card-body {
+    overflow: auto;
 }
 
 .card-title {
@@ -68,30 +118,27 @@ body {
 }
 
 .list-group-item {
-    background-color: rgba(0,0,0,0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     color: white;
+    border-bottom: none;
 }
 
 .badge {
     background-color: green;
 }
 
-.contact-container {
-    width: 15vw;
-}
-
-.contact-sub-container {
-    min-width: 50%;
-}
-
 .contact-link {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .contact-link:hover {
     color: rgb(150, 150, 150);
+}
+
+.contact-info-box {
+    margin: 5px 15px 5px 15px;
 }
 
 .section-content {
@@ -99,16 +146,9 @@ body {
     padding: 20px;
 }
 
-.profile-picture-container {
-    width: 20%;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 20px;
-}
-
 .profile-picture {
-    width: 100%;
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-color: green;
 }
 
 .profile-sumary-container {
@@ -147,7 +187,100 @@ body {
     animation: fall 5s linear infinite;
 }
 
+.language-card {
+    width: 20rem;
+}
 
+.footer {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgb(0, 83, 0);
+}
+
+.navbar-toggler-icon {
+    background-image: url("../assets/img/hamburguer-menu.svg") !important;
+}
+
+.text-muted {
+    color: rgba(110, 110, 110, 0.815) !important
+}
+
+.professional-experience-button {
+    color: white;
+    border: 1px solid green;
+    padding: 15px;
+}
+
+.professional-experience-button:hover {
+    border: 1px solid green !important;
+}
+
+.professional-experience-container {
+    width: 50%;
+}
+
+.trajectory-header-container {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    border-bottom: 1px solid green;
+    position: relative;
+}
+
+.trajectory-header {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* #region Fonts */
+
+@font-face {
+    font-family: pixel;
+    src: url(../assets/fonts/dogica.ttf);
+}
+
+@font-face {
+    font-family: cuneiform;
+    src: url(../assets/fonts/cuneiform.ttf);
+}
+
+/*#endregion */
+
+/* #region Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #535353;
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 83, 0);
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 102, 0);
+}
+
+/*#endregion */
+
+/* #region Animations*/
 
 @keyframes fall {
     0% {
@@ -160,3 +293,39 @@ body {
         opacity: 1;
     }
 }
+
+/*#endregion */
+
+/* #region Media Query*/
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 12px !important;
+    }
+
+    .professional-experience-container {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .profile-image-container {
+        display: none;
+    }
+
+    .about-me-content {
+        width: 100%;
+    }
+
+    .professional-experience-container {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 10px !important;
+    }
+}
+
+/*#endregion */

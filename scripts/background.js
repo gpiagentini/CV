@@ -30,5 +30,5 @@ async function cleanElements() {
     }
 }
 
-setInterval(createStream, 10);
-setInterval(cleanElements, 10);
+//setInterval(createStream, 1000);
+//setInterval(cleanElements, 10);
