@@ -1,4 +1,4 @@
-loadContent("../content/pt-br.html")
+loadContent("pt-br.html")
 
 function loadContent(pageName) {
     var xhr = new XMLHttpRequest();
