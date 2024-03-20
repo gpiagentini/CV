@@ -22,33 +22,6 @@ html {
     z-index: 1;
 }
 
-.timeline-container {
-    position: relative;
-    width: 50%;
-}
-
-.timeline {
-    position: absolute;
-    border-left: 5px dashed rgb(0, 70, 0);
-    height: 100%;
-}
-
-.timeline-card {
-    width: 400px;
-    position: relative;
-    left: 250px;
-    border: 1px dashed green;
-    border-radius: 5px;
-}
-
-.timeline-card:nth-child(even) {
-    left: -250px;
-}
-
-.timeline-card {
-    width: 20rem;
-}
-
 .navbar {
     color: gray;
     width: 100% !important;
