@@ -1,2 +1,2 @@
 # Gabriel Martins Teixeira Piagentini
-Welcom to my online CV.
+Welcome to my online CV.
